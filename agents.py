@@ -9,9 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# If not loaded from .env, use this
-if not os.getenv("MISTRAL_API_KEY"):
-    os.environ["MISTRAL_API_KEY"] = "djTIWeUlUg9ewMuOHqhX8QbdbbxFLteQ"
+
 
 
 
