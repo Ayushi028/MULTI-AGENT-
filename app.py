@@ -1,5 +1,10 @@
 import os
-
+# Read API key from Streamlit Cloud secrets
+try:
+    if "MISTRAL_API_KEY" in st.secrets:
+        os.environ["MISTRAL_API_KEY"] = st.secrets["MISTRAL_API_KEY"]
+except:
+    pass
 
 import streamlit as st
 import time
